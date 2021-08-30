@@ -31,7 +31,21 @@ section, aside {
     padding: 1em;
 }
 
-/* RESETS */
+button {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+/* RESETS & GLOBALS*/
 
 :root {
     --con-header: #212121;
@@ -88,7 +102,7 @@ nav > ul > li:hover {
     transition: 300ms;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 568px) {
 
     header {
         justify-content: space-evenly;
@@ -115,6 +129,7 @@ nav > ul > li:hover {
 
     header > .mobile-nav {
         display: none;
+        z-index: 1;
     }
 
     #mobile-menu {
@@ -133,11 +148,15 @@ nav > ul > li:hover {
 
 /* HEADER AND NAV */
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background: var(--con-header);
-    position: fixed;
     bottom: 0%;
-    max-height: 50px;
+    min-height: 50px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -169,7 +188,7 @@ footer {
     margin-left: 0.3em
 }
 
-@media (max-width: 415px) {
+@media (max-width: 568px) {
 
     footer {
         background: var(--con-header);
@@ -210,7 +229,8 @@ main:not(:last-child) {
 
 .card-container {
     display: flex;
-    width: 50%;
+    width: 60%;
+    max-height: 30em;
     margin: auto;
     padding-top: 1em;
 }
@@ -229,4 +249,100 @@ main:not(:last-child) {
     background-size: cover;
     position: relative;
     left: -15px;
+}
+
+@media (max-width: 568px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+        padding-top: 1em;
+    }
+
+    .card-services-text {
+        flex: 1;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 1em 3em;
+        height: 150px;
+        order: 2;
+    }
+    
+    .card-services-img {
+        flex: 1;
+        aspect-ratio: 1 / 1; 
+        background-image: url(src/placeholder-img-500.jpg);
+        background-size: cover;
+        position: relative;
+        left: 0;
+        bottom: -10px;
+        min-height: 250px;
+    }
+}
+
+/* CARDS FOR SERVICES */
+
+.cta {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    height: 100%;
+}
+
+.newsletter-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+}
+
+input {
+    height: 3em;
+    width: 20em;
+    background: var(--con-header);
+    color: white;
+}
+
+button {
+    height: 3em;
+    width: 8em;
+    color: white;
+    font-weight: 800;
+    background: linear-gradient(45deg, #212121, #1b1b1b);
+}
+
+.input-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-btn > input, button {
+    display: inline-block;
+    padding: 0 2em;
+    margin-left: 0.3em;
+}
+
+.newsletter-cta > p {
+    color: #464646;
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.cta-h1 {
+    font-size: 2.5em;
+}
+
+/* CTA Newsletter */
+
+summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
 }
