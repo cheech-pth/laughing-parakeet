@@ -25,7 +25,7 @@ ul, li, a, a:link, a:visited, a:link:active, a:visited:active {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 0;
+    padding: 2em;
 }
 
 section, aside {
@@ -48,6 +48,8 @@ input {
 
 p {
     margin: 0;
+    line-height: 1.6em;
+    padding: 2em;
 }
 
 /* RESETS & GLOBALS*/
@@ -295,6 +297,7 @@ main:not(:last-child) {
     align-items: center;
     min-height: 30vh;
     height: 100%;
+    padding: 3em 0;
 }
 
 .newsletter-cta {
@@ -338,8 +341,10 @@ button {
     line-height: 1.6em;
 }
 
-.cta-h1 {
+.newsletter-cta > h1 {
     font-size: 2.5em;
+    padding: 1em;
+    padding-top: 0;
 }
 
 /* CTA Newsletter */
@@ -367,10 +372,14 @@ summary {
 
 /* SITEMAP COMPLETE */
 
+.blog-title {
+    margin: 5em;
+}
+
 .blog-content {
     display: flex;
     padding: 3em 10em;
-    height: 80vh;
+    height: 70vh;
 }
 
 .blog-content-main {
@@ -382,6 +391,39 @@ summary {
     flex: 1;
 }
 
+.blog-content-side > img {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 1em;
+}
+
+.blog-content-side > p {
+    max-width: 250px;
+    text-align: justify;
+    margin-top: 1em;
+}
+
 .blog-content-main > p:not(:first-child) {
     margin-top: 1em;
+}
+
+/* BLOG COMPLETE */
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1em;
+    height: 80vh;
+    margin: 0 6em;
+    width: 50%;
+}
+
+label {
+    margin: 1em;
+}
+
+.submit-form {
+    margin-top: 1em;
+    align-self: flex-end;
 }
