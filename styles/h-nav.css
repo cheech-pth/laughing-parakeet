@@ -9,7 +9,7 @@ header {
     padding: 1em 0;
 }
 
-header > img {
+img {
     max-height: 50px;
     margin-right: 2em;
 }
