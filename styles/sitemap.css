@@ -1,0 +1,10 @@
+.sm-structure {
+    display: flex;
+    padding: 10em;
+    margin: auto;
+    height: 100vh;
+}
+
+.sm-column {
+    padding: 5em;
+}

@@ -1,0 +1,34 @@
+.blog-title {
+    margin: 5em;
+}
+
+.blog-content {
+    display: flex;
+    padding: 3em 10em;
+    height: 70vh;
+}
+
+.blog-content-main {
+    flex: 2;
+    padding: 0 5em;
+}
+
+.blog-content-side {
+    flex: 1;
+}
+
+.blog-content-side > img {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 1em;
+}
+
+.blog-content-side > p {
+    max-width: 250px;
+    text-align: justify;
+    margin-top: 1em;
+}
+
+.blog-content-main > p:not(:first-child) {
+    margin-top: 1em;
+}

@@ -1,0 +1,18 @@
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1em;
+    height: 80vh;
+    margin: 0 6em;
+    width: 50%;
+}
+
+label {
+    margin: 1em;
+}
+
+.submit-form {
+    margin-top: 1em;
+    align-self: flex-end;
+}
