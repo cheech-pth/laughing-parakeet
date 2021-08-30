@@ -5,38 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Sitemap</title>
 </head>
 
 <body>
-    <h1>Sitemap Index</h1>
-    <div class="sm-column">
-        <h3>Column Header</h3>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-    </div>
-    <div class="sm-column">
-        <h3>Column Header</h3>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-    </div>
-    <div class="sm-column">
-        <h3>Column Header</h3>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-        <p>Data Info</p>
-    </div>
+    <div id="static-header"></div>
+
+    <section class="sm-structure">
+        <h1>Sitemap Index</h1>
+        <div class="sm-column">
+            <h3>Column Header</h3>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+        </div>
+        <div class="sm-column">
+            <h3>Column Header</h3>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+        </div>
+        <div class="sm-column">
+            <h3>Column Header</h3>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+            <p>Data Info</p>
+        </div>
+    </section>
+
+    <div id="static-footer"></div>
+
 </body>
+<script>
+    $("#static-header").load("header.html", function () {
+    });
+    $("#static-footer").load("footer.html", function () {
+    });
+</script>
 
 </html>

@@ -25,6 +25,7 @@ ul, li, a, a:link, a:visited, a:link:active, a:visited:active {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    padding: 0;
 }
 
 section, aside {
@@ -43,6 +44,10 @@ input {
     margin: 0;
     border-radius: 0;
     border: 0;
+}
+
+p {
+    margin: 0;
 }
 
 /* RESETS & GLOBALS*/
@@ -155,7 +160,7 @@ body {
 
 footer {
     background: var(--con-header);
-    bottom: 0%;
+    bottom: 0;
     min-height: 50px;
     height: 100%;
     width: 100%;
@@ -345,4 +350,38 @@ summary {
     justify-content: center;
     align-items: center;
     padding: 5em;
+}
+
+/* INDEX COMPLETE */
+
+.sm-structure {
+    display: flex;
+    padding: 10em;
+    margin: auto;
+    height: 100vh;
+}
+
+.sm-column {
+    padding: 5em;
+}
+
+/* SITEMAP COMPLETE */
+
+.blog-content {
+    display: flex;
+    padding: 3em 10em;
+    height: 80vh;
+}
+
+.blog-content-main {
+    flex: 2;
+    padding: 0 5em;
+}
+
+.blog-content-side {
+    flex: 1;
+}
+
+.blog-content-main > p:not(:first-child) {
+    margin-top: 1em;
 }
