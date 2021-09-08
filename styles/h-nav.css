@@ -1,5 +1,13 @@
+.bg-screen {
+    background: url(../src/desktop-img.jpg), var(--con-header);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
-    background: var(--con-header);
     max-height: 94px;
     width: 100%;
     display: flex;
@@ -14,24 +22,23 @@ img {
     margin-right: 2em;
 }
 
-header > h1 {
-    font-size: 2em;
-    font-weight: 800;
-}
-
 .mobile-nav {
     display: none;
 }
 
 #mobile-menu, #hamburger {
     display: none;
+    cursor: pointer;
+}
+
+nav {
+    background: hsla(0, 0%, 0%, 0.493);
 }
 
 nav > ul {
     display: flex;
     justify-content: space-evenly;
     padding: 1em;
-    background: var(--con-header);
     color: white;
 }
 
@@ -42,12 +49,24 @@ nav > ul > li:hover {
 
 @media (max-width: 568px) {
 
+    .bg-screen {
+        background: url(../src/desktop-img.jpg), var(--con-header);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
     header {
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-between;
     }
 
     header > img {
         margin-right: 0;
+    }
+
+    .fi-logo {
+        margin-left: 0.4rem;
     }
 
     nav {
@@ -55,14 +74,28 @@ nav > ul > li:hover {
     }
 
     .mobile-nav {
-        position: absolute;
-        bottom: 50%;
-        right: 0%;
-        text-align: right;
-        background: var(--con-header);
-        padding: 2em 0.8em;
-        border-radius: 15px;
+        background: var(--con-transparent);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        min-height: 100vh;
+        min-width: 100vw;
+        text-align: center;
         line-height: 2em;
+        padding: 50% 0.8em;
+        animation: drop 1s ease-in-out;
+    }
+
+    @keyframes drop {
+        from {
+            transform: translateY(-100%);
+            opacity: 0.1;
+        }
+
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
     }
 
     header > .mobile-nav {
@@ -76,6 +109,29 @@ nav > ul > li:hover {
 
      #hamburger {
         display: block;
+        cursor: pointer;
+    }
+
+    .active {
+        animation: pulse 1s infinite;
+        -webkit-animation: pulse 1s infinite;
+        -moz-animation: pulse 1s infinite;
+        -o-animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+        from {
+            transform : scale(1);
+            opacity   : 1;
+        }
+        50% {
+            transform : scale(0.75);
+            opacity   : 0.25;
+        }
+        to {
+            transform : scale(1);
+            opacity   : 1;
+        }
     }
 
     #mobile-menu:checked + .mobile-nav {

@@ -42,11 +42,8 @@ footer {
 
     footer {
         background: var(--con-header);
-        position: fixed;
-        bottom: 0%;
-        max-height: 50px;
+        bottom: 0;
         height: 100%;
-        max-width: 100vh;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
