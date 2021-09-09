@@ -1,6 +1,9 @@
-main {
+.web-main {
+    display: flex;
+    flex-direction: column;
     padding: 3em;
     margin: auto 10%;
+    min-height: 82vh;
 }
 
 .form-content {
@@ -17,7 +20,7 @@ label {
 }
 
 input {
-    min-width: 90%;
+    min-width: 100%;
 }
 
 .submit-form {
@@ -29,9 +32,20 @@ input {
     display: none;
 }
 
+select {
+    border-radius: 0;
+    border: 0;
+    height: 3em;
+    width: 10em;
+    background: var(--con-gradient);
+    color: white;
+    padding: 0 1em;
+    min-width: 90%;
+}
+
 @media (max-width: 568px) {
 
-    main {
+    .web-main {
         display: flex;
         flex-direction: column;
         padding: 1em;
@@ -55,6 +69,11 @@ input {
 
     label {
         display: none;
+    }
+
+    select {
+        margin-bottom: 1em;
+        min-width: 100%;
     }
     
     .desktop-input {

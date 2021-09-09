@@ -12,23 +12,33 @@
     <link rel="stylesheet" href="styles/globals.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Web Form</title>
+    <title>Quote</title>
 </head>
 
 <body>
     <div id="static-header"></div>
-    <main>
-        <h1>Web Form</h1>
+    <main class="web-main">
+        <h1>Inquiry for a Quote</h1>
         <section class="form-content">
-            <label for="submit-form">Email</label>
-            <input class="mobile-input" type="text" placeholder="Email">
+            <label for="submit-form">Your Full Name</label>
+            <input class="mobile-input" type="text" placeholder="Your Full Name">
             <input class="desktop-input" type="text">
-            <label for="submit-form">Phone Contact</label>
-            <input class="mobile-input" type="tel" placeholder="Phone Contact">
-            <input class="desktop-input" type="tel">
-            <label for="submit-form">Email Address</label>
-            <input class="mobile-input" type="email" placeholder="Email Address">
+            <label for="submit-form">Your Email Address</label>
+            <input class="mobile-input" type="email" placeholder="Your Email Address">
             <input class="desktop-input" type="email">
+            <label for="submit-form">Photographers Required</label>
+            <input class="mobile-input" type="number" placeholder="Number of Photographers">
+            <input class="desktop-input" type="number">
+            <label for="submit-form">Location</label>
+            <select name="location" id="location-select">
+                <option value="">Select a Location</option>
+                <option value="brisbane">Brisbane</option>
+                <option value="goldcoast">Gold Coast</option>
+                <option value="sunshinecoast">Sunshine Coast</option>
+            </select>
+            <label for="submit-form">Number of hours</label>
+            <input class="mobile-input" type="number" placeholder="Number of Hours">
+            <input class="desktop-input" type="number">
             <button class="submit-form">Submit</button>
         </section>
     </main>

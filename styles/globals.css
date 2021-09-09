@@ -62,12 +62,7 @@ input {
 p {
     margin: 0;
     line-height: 1.6em;
-    padding: 0.5em;
-}
-
-.bold {
-    font-weight: 800;
-    color: red;
+    padding: 0.8em 0;
 }
 
 button {
@@ -76,10 +71,26 @@ button {
     color: white;
     font-weight: 800;
     background: linear-gradient(45deg, #0f0f0f, #252525);
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    border: black solid 1px;
+    color: black;
 }
 
 figcaption {
     text-align: center;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 1em;
+    margin-left: 0.3em;
+    font-weight: bold;
 }
 
 /* RESETS & GLOBALS*/
