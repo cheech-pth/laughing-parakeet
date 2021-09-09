@@ -19,6 +19,10 @@ label {
     margin: 1em;
 }
 
+input:focus {
+    background: rgb(109, 109, 109);
+}
+
 input {
     min-width: 100%;
 }

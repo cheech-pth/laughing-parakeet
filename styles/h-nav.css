@@ -48,6 +48,10 @@ nav > ul > li:hover {
     transition: 300ms;
 }
 
+nav > ul > li:visited {
+    color: #ff0000 !important;
+}
+
 @media (max-width: 568px) {
 
     .bg-screen {
@@ -112,10 +116,6 @@ nav > ul > li:hover {
      #hamburger {
         display: block;
         cursor: pointer;
-    }
-
-    #hamburger:hover {
-        transform: scale(1.3);
     }
 
     .active {
