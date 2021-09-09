@@ -17,6 +17,7 @@
 
 label {
     margin: 1em;
+    width: 50%;
 }
 
 input:focus {
@@ -42,7 +43,7 @@ select {
     height: 3em;
     width: 10em;
     background: var(--con-gradient);
-    color: white;
+    color: grey;
     padding: 0 1em;
     min-width: 90%;
 }
