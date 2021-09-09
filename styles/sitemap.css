@@ -1,10 +1,23 @@
 .sm-structure {
     display: flex;
-    padding: 10em;
     margin: auto;
-    height: 100vh;
 }
 
 .sm-column {
     padding: 5em;
+}
+
+@media (max-width: 568px) {
+    .sm-structure {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .sm-column {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

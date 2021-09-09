@@ -1,18 +1,69 @@
+main {
+    padding: 3em;
+    margin: auto 10%;
+}
+
 .form-content {
     display: flex;
     flex-direction: column;
     align-content: center;
     padding: 1em;
-    height: 80vh;
-    margin: 0 6em;
-    width: 50%;
+    margin: 0 3em;
+    width: 60%;
 }
 
 label {
     margin: 1em;
 }
 
+input {
+    min-width: 90%;
+}
+
 .submit-form {
     margin-top: 1em;
     align-self: flex-end;
+}
+
+.mobile-input {
+    display: none;
+}
+
+@media (max-width: 568px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .mobile-input {
+        display: block;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    label {
+        display: none;
+    }
+    
+    .desktop-input {
+        display: none;
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    .submit-form {
+        min-width: 100%;
+    }
 }

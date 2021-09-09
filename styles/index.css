@@ -22,17 +22,6 @@
     width: 80%;
 }
 
-input {
-    height: 3em;
-    width: 20em;
-    background: var(--con-gradient);
-    color: white;
-}
-
-button {
-    margin-left: 0.5rem;
-}
-
 .input-btn {
     display: flex;
     justify-content: center;
@@ -54,7 +43,7 @@ summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 2em 6em;
     min-height: 500px;
 }
 
