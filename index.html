@@ -22,30 +22,30 @@
         <h1>Flash Imagery</h1>
         <p>Flash Imagery can be hired for any occasion or event. This company is aimed at people who want
             something different in photography with an emphasis on quality</p>
-        <span>Think, Create, Imagine!</span>
+        <span>Brisbane Based Photography</span>
     </div>
     <div class="sponsor-container">
         <img class="sponsors" src="src/sponsor1.svg" alt="">
         <img class="sponsors" src="src/sponsor2.svg" alt="">
         <img class="sponsors" src="src/sponsor3.svg" alt="">
     </div>
-    <summary class="summary-flex">
+    <main class="summary-flex">
         <div class="img-container">
             <img class="img1" src="src/sport-img-500.jpg" alt="Skateboarder">
             <img class="img2" src="src/cat-img-500.jpg" alt="Cat on mountain">
             <img class="img3" src="src/wedding-img-500.jpg" alt="Wedding">
-            <figcaption class="fig1">Sports</figcaption>
-            <figcaption class="fig2">Animals</figcaption>
-            <figcaption class="fig3">Weddings</figcaption>
+            <span class="fig1">Sports</span>
+            <span class="fig2">Animals</span>
+            <span class="fig3">Weddings</span>
         </div>
-    </summary>
+    </main>
 
     <section class="cta">
         <div class="newsletter-cta">
-            <h1>Subscribe</h1>
+            <h2>Subscribe</h2>
             <p>Feel free to subscribe to our newsletter post, we offer great deals on many of our services!</p>
             <div class="input-btn">
-                <input type="email" name="" id="">
+                <input type="email" name="subscribe" id="subscribe">
                 <button>Sign up!</button>
             </div>
         </div>
@@ -53,12 +53,11 @@
 
 
     <div id="static-footer"></div>
-</body>
-<script>
-    $("#static-header").load("header.html", function () {
-    });
-    $("#static-footer").load("footer.html", function () {
-    });
-</script>
+    <script>
+        $("#static-header").load("src/header.html", function () {
+        });
+        $("#static-footer").load("src/footer.html", function () {
+        });
+    </script>
 
 </html>

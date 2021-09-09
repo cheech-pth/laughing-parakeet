@@ -55,12 +55,12 @@
     </section>
 
     <div id="static-footer"></div>
+    <script>
+        $("#static-header").load("src/header.html", function () {
+        });
+        $("#static-footer").load("src/footer.html", function () {
+        });
+    </script>
 </body>
-<script>
-    $("#static-header").load("header.html", function () {
-    });
-    $("#static-footer").load("footer.html", function () {
-    });
-</script>
 
 </html>

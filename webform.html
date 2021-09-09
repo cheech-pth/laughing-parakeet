@@ -19,7 +19,7 @@
     <div id="static-header"></div>
     <main class="web-main">
         <h1>Inquiry for a Quote</h1>
-        <section class="form-content">
+        <div class="form-content">
             <label for="submit-form">Your Full Name</label>
             <input class="mobile-input" type="text" placeholder="Your Full Name">
             <input class="desktop-input" type="text">
@@ -39,17 +39,18 @@
             <label for="submit-form">Number of hours</label>
             <input class="mobile-input" type="number" placeholder="Number of Hours">
             <input class="desktop-input" type="number">
-            <button class="submit-form">Submit</button>
-        </section>
+            <button class="submit-form" id="submit-form">Submit</button>
+        </div>
     </main>
 
     <div id="static-footer"></div>
+    <script>
+        $("#static-header").load("src/header.html", function () {
+        });
+        $("#static-footer").load("src/footer.html", function () {
+        });
+    </script>
+
 </body>
-<script>
-    $("#static-header").load("header.html", function () {
-    });
-    $("#static-footer").load("footer.html", function () {
-    });
-</script>
 
 </html>
